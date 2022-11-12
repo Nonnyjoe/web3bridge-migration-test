@@ -190,10 +190,15 @@ body {
     height: 40px;
     width: 40px;
     text-align: center;
-    padding-top: 8px;
+    padding-top: 6px;
     border-radius: 50%;
     right: 20px;
     top: 10px;
+    border: 2px solid hsl(233, 100%, 69%);
+}
+
+.goBack:hover {
+    background-color: hsl(233, 100%, 69%);
 }
 
 .form-control {
