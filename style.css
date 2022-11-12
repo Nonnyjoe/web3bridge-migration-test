@@ -1,0 +1,315 @@
+:root {
+    --lightMode-component: hsl(0, 0%, 100%);
+    --lightMode-text: hsl(200, 15%, 8%);
+    --lightMode-input: hsl(0, 0%, 52%);
+    --lightMode-Background: hsl(0, 0%, 98%);
+    --DarkMode-component: hsl(209, 23%, 22%);
+    --DarkMode-text: hsl(0, 0%, 100%);
+    --DarkMode-input: hsl(0, 0%, 52%);
+    --DarkMode-Background: hsl(207, 26%, 17%);
+}
+
+body {
+    background-color: var(--DarkMode-Background) !important;
+    color: var(--DarkMode-text) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.nav {
+    background-color: var(--DarkMode-component) !important;
+    color: var(--DarkMode-text) !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+.hero-section {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 0px;
+}
+
+.hero-section p {
+    padding: 0 2.5rem;
+}
+
+.intro-text {
+    border-radius: 50% 50% 50% 50% / 0% 0% 100% 100%;
+    background-color: hsl(233, 100%, 69%);
+    border: none;
+    height: 10rem;
+    padding-top: 1rem;
+}
+
+.sub-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 3.5rem;
+}
+
+
+/* .intro-img {
+    background-color: blue;
+    border: none;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    height: 40rem;
+    width: 40rem;
+    position: relative;
+    z-index: -1;
+    top: -5rem;
+    right: -10rem;
+} */
+
+.tiers {
+    justify-content: space-around;
+}
+
+.tiers h3 {
+    text-transform: uppercase;
+    margin-bottom: .8rem;
+}
+
+.tiers button {
+    margin-top: 2rem;
+    width: 13rem;
+    height: 3rem;
+    border-radius: 2rem;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.green-btn {
+    background-color: hsl(171, 66%, 44%);
+    border: 2px solid hsl(171, 67%, 34%);
+    border-top: none;
+}
+
+.gold-btn {
+    background-color: hsl(233, 100%, 69%);
+    border: 2px solid hsl(233, 84%, 48%);
+    border-top: none;
+}
+
+.gold,
+.silver,
+.bronze {
+    background-color: var(--DarkMode-component) !important;
+    color: var(--DarkMode-text) !important;
+    border-radius: 2rem;
+    padding: 2rem;
+    width: 20rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    box-shadow: rgb(0 0 0 / 8%) 0px 4px 12px;
+}
+
+.bronze h3,
+.silver h3 {
+    color: hsl(171, 66%, 44%);
+    font-weight: 600;
+}
+
+.gold h3 {
+    color: hsl(233, 100%, 69%);
+    font-weight: 600;
+}
+
+
+/* .silver,
+.bronze {
+    border: 5px solid hsl(171, 66%, 44%);
+    ;
+} */
+
+.space-btw {
+    justify-content: space-evenly;
+}
+
+.tier-logo {
+    margin-top: -2rem;
+    width: 5rem;
+}
+
+.tierNumber {
+    margin-bottom: 0px;
+    margin-top: .8rem;
+    text-transform: uppercase;
+}
+
+.label {
+    margin-bottom: -.2rem;
+    margin-top: 1rem;
+}
+
+.investment-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.investment-box {
+    width: 60vw;
+    margin-top: 2rem;
+}
+
+.investment-details {
+    background-color: var(--DarkMode-component) !important;
+    color: var(--DarkMode-text) !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.investment-details p {}
+
+.tierName {
+    color: var(--DarkMode-text);
+    font-size: 1.2rem !important;
+}
+
+.investment-details span {
+    color: var(--DarkMode-text);
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+
+.investment-form {
+    margin-top: 2rem;
+    background-color: var(--DarkMode-component) !important;
+    color: var(--DarkMode-text) !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    padding: 2rem;
+    border-radius: 2rem;
+    position: relative;
+}
+
+.goBack {
+    position: absolute;
+    background-color: var(--DarkMode-Background);
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 50%;
+    right: 20px;
+    top: 10px;
+}
+
+.form-control {
+    width: 100%;
+    margin-bottom: .5rem;
+    height: 2.5rem;
+}
+
+.error p {
+    color: #f70940;
+}
+
+.submit-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#investBtn {
+    width: 70%;
+    height: 3rem;
+    border-radius: 2rem;
+    letter-spacing: 2px;
+    color: var(--DarkMode-text) !important;
+    background-color: hsl(233, 100%, 69%);
+    border: 2px solid hsl(233, 84%, 48%);
+    border-top: none;
+}
+
+.noDisplay {
+    display: none;
+}
+
+.investors {
+    margin-top: 3rem;
+}
+
+.newEntry {
+    padding: .5rem .8rem;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.newEntry1 {
+    background-color: var(--DarkMode-component) !important;
+    color: var(--DarkMode-text) !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+.taskEntries {
+    display: flex;
+    justify-content: space-between;
+}
+
+.taskEntries2 {
+    background-color: var(--DarkMode-component) !important;
+    color: var(--DarkMode-text) !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    margin-bottom: .5rem !important;
+    border-radius: .5rem;
+}
+
+.investedAmmountP {
+    margin-left: -3rem;
+}
+
+.extraWidth {
+    width: 5rem;
+}
+
+.investedAmmountP,
+.investorNameP {
+    appearance: none;
+    border: none;
+    outline: none;
+}
+
+.investorName {
+    width: 60%;
+    margin-right: .5rem;
+}
+
+.investedAmmount {
+    width: 30%;
+    margin-right: .5rem;
+}
+
+.noDesign {
+    appearance: none;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1.1rem;
+    color: #ffff;
+    padding-left: 1rem;
+}
+
+.actions button {
+    /* height: 3rem;
+    margin: .4rem;*/
+    padding-left: .8rem;
+    padding-right: .8rem;
+    padding: .6rem;
+    border-radius: .5rem;
+    border: 1px solid whitesmoke;
+    color: white;
+    font-size: .8rem;
+    letter-spacing: 1.5px;
+    background: linear-gradient(to top left, #5761b2, #1fc5a8);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+@media screen and (max-width: 750px) {
+    .investment-box {
+        width: 98%;
+        margin-top: 2rem;
+    }
+}

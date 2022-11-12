@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Progressive savings group</title>
+</head>
+
+<body>
+    <nav class="nav p-4 mb-1 mode">
+        <div class="title">
+            <h5>PROGRESSIVE (3) TIER SAVINGS GROUP</h5>
+        </div>
+    </nav>
+
+    <!-- first page section to displat the 3 tiers and proide option to select a tier -->
+    <div class="investment-secion" id="investmentSecion">
+        <h2 class="sub-title">
+            TIER'S
+        </h2>
+        <div class="container">
+            <div class="row tiers">
+                <div class="tier-1 col-lg-3 col-md-3 bronze">
+                    <img src="./img/bronze_medal_images__6_-removebg-preview.png" class="tier-logo" alt="">
+                    <p class="tierNumber">Tier three</p>
+                    <h3>Bronze TIER</h3>
+                    <P>User friendly package specialy designed grow your savings</P>
+                    <p class="label">Interest Rate</p>
+                    <h2>
+                        5% weekly
+                    </h2>
+                    <p class="label">Minimum investment</p>
+                    <h2>
+                        #10,000
+                    </h2>
+                    <button class="bronze-btn green-btn proceed" id="Bronze"> GET STARTED</button>
+                </div>
+                <div class="tier-3 col-lg-3 col-md-3 gold">
+                    <img src="./img/gold_medal_6168b38454d2ce4b02faf92a4b73e107-removebg-preview.png" class="tier-logo" alt="">
+                    <p class="tierNumber">Tier one</p>
+                    <h3>GOLD TIER</h3>
+                    <P>Bounty package specially designed for experienced savers</P>
+                    <p class="label">Interest Rate</p>
+                    <h2>
+                        20% weekly
+                    </h2>
+                    <p class="label">Minimum investment</p>
+                    <h2>
+                        #30,000
+                    </h2>
+                    <button class="gold-btn proceed" id="Gold"> GET STARTED</button>
+                </div>
+                <div class="tier-2 col-lg-3 col-md-3 silver">
+                    <img src="./img/silver_medalimages__6_-removebg-preview.png" class="tier-logo" alt="">
+                    <p class="tierNumber">Tier two</p>
+                    <h3>Silver TIER</h3>
+                    <P>Package for mid-range savers, rewarded with a solid intrest rate</P>
+                    <p class="label">Interest Rate</p>
+                    <h2>
+                        10% weekly
+                    </h2>
+                    <p class="label">Minimum investment</p>
+                    <h2>
+                        #20,000
+                    </h2>
+                    <button class="silver-btn green-btn proceed" id="Silver"> GET STARTED</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- second section to display unique details about the selected tier -->
+    <div class="container-fluid investment-zone noDisplay" id="investmentZone">
+        <div class="row space-btw">
+            <div class=" col-md-6" id="">
+                <div class="container investment-section">
+                    <div class=" investment-box">
+                        <div class="investment-details row">
+                            <div class="row-1 col-6">
+                                <p><span>Tier Name: </span> <span id="tierName" class="tierName">Gold Tier</span></p>
+                                <p> <span>Tier Population:</span> <span id="tPopulation" class="tierName"> 0 </span> </p>
+                                <p><span>Investment Period:</span>One week </p>
+                                <p><span>Investment Ammount:</span> <span id="ammountInvested" class="tierName"></span></p>
+
+                            </div>
+                            <div class="row-2 col-6">
+                                <p><span>Tier Total Ballance: </span><span id="tBallance" class="tierName"> #0</span> </p>
+                                <p><span>Tier interest rate: </span > <span id="profitRate" class="tierName">20%</span> </p>
+                                <p><span>Expected Profit:</span> <span id="profitAmmount" class="tierName">#6,000</span> </p>
+                                <p><span>Total Withdrawable Ammount:</span> <span id="ammountWithdrawn" class="tierName"></span> </p>
+                            </div>
+                        </div>
+                        <!-- simple form to collect the investors name and ammount to invest -->
+                        <div class="investment-form">
+                            <form action="" id="investmentForm">
+                                <div class="goBack goBack1" id="goBack">
+                                    <i class="fa-solid fa-left-long goBack1" id=""></i>
+                                </div>
+                                <div class="row space-btw">
+                                    <div class="F-name col-7">
+                                        <label for="name" class="form-label  label">Full Name</label>
+                                        <input type="text" class="form-control" name="investors-name" id="investor">
+                                    </div>
+                                    <div class="F-ammount col-5">
+                                        <label for="Ammount" class="form-label  label">Ammount</label>
+                                        <input type="number" class="form-control" name="investment-ammount" id="ammount">
+                                    </div>
+                                    <div class="col-12 error" id="error">
+
+                                    </div>
+                                    <div class="submit-sec">
+                                        <button type="submit" id="investBtn" class="col-12 btn submit">INVEST</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- section to disply a list of all the investors and provide an option for investment -->
+            <div class="investors col-md-5">
+                <div class="newEntry newEntry1">
+                    <form class="taskEntries">
+                        <input class="noDesign investorNameP" placeholder="INVESTOR NAME" id="investorName" readonly="readonly ">
+                        <input class="noDesign investedAmmountP" id="investedAmmount " placeholder="AMMOUNT" readonly="readonly ">
+                        <input class="noDesign extraWidth" id="investedAmmount " placeholder="" readonly="readonly ">
+                    </form>
+                </div>
+
+                <!-- empty div designed to collect and display data from displayInvestors function -->
+                <div class="newEntry" id="addHere">
+
+                </div>
+            </div>
+
+            <script src="script.js "></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+</body>
+
+</html>
