@@ -169,7 +169,7 @@ withdraw = (tier, ball, ammount, targetId) => {
     displayInvestors(tier);
 }
 
-//function to collaps the investment form section 
+//function to collaps the investment form section and reveal the tier list
 goBack.forEach((go) => {
     go.addEventListener("click", (e) => {
         investmentSecion.classList.remove('noDisplay');
